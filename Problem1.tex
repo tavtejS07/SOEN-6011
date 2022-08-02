@@ -1,0 +1,80 @@
+\documentclass[12pt]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{textcomp, gensymb}
+\usepackage{gensymb}
+\usepackage{amssymb}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{algpseudocode}
+\graphicspath{{./images}}
+\usepackage{fancyhdr}
+\usepackage{blindtext}
+\usepackage[colorlinks=true, urlcolor=black, linkcolor=black]{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+urlcolor=black
+}
+\usepackage{url}
+
+
+\title{ETERNITY:FUNCTION F4}
+\author{Tavtej Singh Lehri}
+\date{}
+\newcommand*{\Gtr}{\smallrel\gtr}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\fancypagestyle{}{}
+\fancyhf{}
+\rhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+
+\begin{titlepage}
+\centering
+\vspace*{0.5 cm}
+
+\begin{center}
+\textsc{\Large CONCORDIA UNIVERSITY}\\ [2.0 cm]    
+\end{center}
+
+\textsc{\large SOEN 6011: Software Engineering Processes}\\[0.5 cm]
+\rule{\linewidth}{0.2 mm}\\[0.4 cm]
+{\LARGE \textbf \thetitle}\\[0.2 cm]
+{\LARGE \textbf{$\Gamma$(x)}}
+\rule{\linewidth}{0.2 mm}\\[1.5 cm]
+
+\begin{center}
+    {\Large \textbf{\theauthor}}\\[0.2 cm]
+    {\large Student ID: 40121745}\\[2.0 cm]
+    {\large \url{https://github.com/tavtejS07/SOEN-6011}}
+\end{center}
+
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+
+\renewcommand{\thesection}{\arabic{section}}
+\section{Introduction}
+\subsection{Description}
+Gamma function is said to be an extension of the factorial function used for complex numbers. For any positive integer Gamma function is defined as below.
+
+\begin{equation}
+    \Gamma(x) = (x-1)!
+\end{equation}
+\newline
+\textbf{Definition 1: } The function which is improper integral of another function is defined as Gamma function.\\[0.5 cm]
+\textbf{Definition 2: }Using the integral formula below we can define Gamma function. \textbf{Note: }For all positive real number x{(i.e $Re(x)>0$)}, the integral follows absolute convergence. This was derived by \textbf{Daniel Bernoulli}.
+\begin{equation}
+    \Gamma(x) = \int\limits_0^\infty t^{z-1} e^{-t} dt\
+\end{equation}
+
+\end{document}
